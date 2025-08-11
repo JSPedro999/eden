@@ -51,14 +51,15 @@ body {
 }
 
 .logo-icon {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .logo h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
     background: linear-gradient(135deg, #0e4714, #0e4714);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
