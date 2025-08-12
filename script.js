@@ -562,8 +562,8 @@ class PlantMonitor {
             <p>Light is crucial for photosynthesis and healthy plant growth. Here's what different light levels mean:</p>
             <ul>
                 <li><strong>0-200 lux:</strong> Very low light - Most plants will struggle, may become leggy</li>
-                <li><strong>200-500 lux:</strong> Low light - Suitable for low-light plants like pothos, snake plants</li>
-                <li><strong>500-1000 lux:</strong> Medium light - Good for most houseplants</li>
+                <li><strong>200-500 lux:</strong> Low light - Suitable for low-light plants like pothos and snake plants</li>
+                <li><strong>500-1000 lux:</strong> Medium light - Suitable for most houseplants</li>
                 <li><strong>1000+ lux:</strong> Bright light - Ideal for flowering plants and succulents</li>
             </ul>
             <p>For reference: indirect sunlight near a window is typically 1000-5000 lux, while direct sunlight can be 10,000+ lux.</p>
@@ -575,9 +575,9 @@ class PlantMonitor {
             <p>Soil moisture is critical for plant health. Too little or too much can cause serious problems:</p>
             <ul>
                 <li><strong>0-20%:</strong> Very dry - Immediate watering needed, risk of plant stress</li>
-                <li><strong>20-40%:</strong> Dry - Time to water most plants</li>
-                <li><strong>40-70%:</strong> Optimal - Perfect moisture level for most plants</li>
-                <li><strong>70-85%:</strong> Moist - Good for humidity-loving plants, monitor closely</li>
+                <li><strong>20-40%:</strong> Dry - Time to water most plants!</li>
+                <li><strong>40-70%:</strong> Optimal - Perfect most plants</li>
+                <li><strong>70-85%:</strong> Moist - Good for humidity-loving plants, but monitor closely!</li>
                 <li><strong>85%+:</strong> Too wet - Risk of root rot, reduce watering</li>
             </ul>
             <p>The optimal range varies by plant type. Succulents prefer 20-40%, while tropical plants like 50-70%.</p>
@@ -589,12 +589,12 @@ class PlantMonitor {
             <p>Soil pH affects nutrient availability and plant health. Most plants prefer slightly acidic to neutral soil:</p>
             <ul>
                 <li><strong>pH 3.0-5.5:</strong> Very acidic - May cause nutrient deficiencies</li>
-                <li><strong>pH 5.5-6.5:</strong> Slightly acidic - Preferred by many plants like blueberries, azaleas</li>
+                <li><strong>pH 5.5-6.5:</strong> Slightly acidic - Preferred by many plants like blueberries and azaleas</li>
                 <li><strong>pH 6.0-7.0:</strong> Optimal range - Best for most houseplants and vegetables</li>
                 <li><strong>pH 7.0-7.5:</strong> Slightly alkaline - Still acceptable for most plants</li>
-                <li><strong>pH 7.5+:</strong> Alkaline - May cause iron deficiency, yellowing leaves</li>
+                <li><strong>pH 7.5+:</strong> Alkaline - May cause iron deficiency and yellowing leaves</li>
             </ul>
-            <p>pH affects how well plants can absorb nutrients. Even if nutrients are present, wrong pH can make them unavailable.</p>
+            <p>pH affects how well plants can absorb nutrients. Even if nutrients are present, the wrong pH can make them unavailable to your plant.</p>
         `;
     }
     
@@ -606,9 +606,9 @@ class PlantMonitor {
                 <li><strong>10-15°C:</strong> Cool - Slow growth, most plants dormant</li>
                 <li><strong>15-25°C:</strong> Optimal - Perfect for most houseplants and active growth</li>
                 <li><strong>25-30°C:</strong> Warm - Good for tropical plants, monitor water needs</li>
-                <li><strong>Above 30°C:</strong> Too hot - Risk of root damage, increased water stress</li>
+                <li><strong>Above 30°C:</strong> Too hot - Risk of root damage and increased water stress</li>
             </ul>
-            <p>Soil temperature is usually more stable than air temperature but follows similar patterns. Root health depends heavily on consistent, appropriate temperatures.</p>
+            <p>Soil temperature is usually more stable than air temperature but follows similar patterns. Root health depends heavily on consistent and appropriate temperatures.</p>
         `;
     }
     
@@ -735,7 +735,7 @@ class PlantMonitor {
                 <ul>
                     <li>Check soil moisture every 2-3 days</li>
                     <li>Water when moisture drops to 30-40%</li>
-                    <li>Water thoroughly but allow drainage</li>
+                    <li>Water thoroughly but allow for drainage</li>
                     <li>Adjust frequency based on season and temperature</li>
                 </ul>
                 <p><strong>Tip:</strong> Plants need less water in winter and more in summer.</p>
@@ -845,12 +845,12 @@ class PlantMonitor {
             <ul>
                 <li><strong>Finger test:</strong> Stick your finger 1-2 inches into soil to check moisture</li>
                 <li><strong>Drainage:</strong> Always ensure pots have drainage holes</li>
-                <li><strong>Water quality:</strong> Use filtered or distilled water if tap water is heavily chlorinated</li>
+                <li><strong>Water quality:</strong> Use filtered or distilled water if your tap water is heavily chlorinated</li>
                 <li><strong>Time of day:</strong> Water in the morning so plants can absorb water during the day</li>
-                <li><strong>Seasonal adjustments:</strong> Water less in winter, more in summer</li>
+                <li><strong>Seasonal adjustments:</strong> Water less in winter, but more in summer</li>
                 <li><strong>Plant-specific:</strong> Research your specific plant's water needs</li>
-                <li><strong>Signs of overwatering:</strong> Yellow leaves, musty smell, fungus gnats</li>
-                <li><strong>Signs of underwatering:</strong> Wilting, dry crispy leaves, soil pulling away from pot</li>
+                <li><strong>Signs of overwatering:</strong> Yellow leaves, musty smell, and fungus gnats</li>
+                <li><strong>Signs of underwatering:</strong> Wilting, dry crispy leaves, and soil pulling away from pot</li>
             </ul>
         `;
     }
@@ -863,8 +863,8 @@ class PlantMonitor {
                 <li><strong>Seasonal changes:</strong> Sun angle changes throughout the year</li>
                 <li><strong>Artificial light:</strong> LED grow lights are energy-efficient and effective</li>
                 <li><strong>Light duration:</strong> Most plants need 12-16 hours of light daily</li>
-                <li><strong>Signs of too little light:</strong> Leggy growth, pale leaves, slow growth</li>
-                <li><strong>Signs of too much light:</strong> Brown/white spots on leaves, wilting despite moist soil</li>
+                <li><strong>Signs of too little light:</strong> Leggy growth, pale leaves, and slow growth</li>
+                <li><strong>Signs of too much light:</strong> Brown/white spots on leaves and wilting despite moist soil</li>
                 <li><strong>Acclimation:</strong> Gradually increase light when moving plants to brighter spots</li>
             </ul>
         `;
