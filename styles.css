@@ -179,7 +179,7 @@ body {
     font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #333;
+    color: #0e4714;
 }
 
 .plant-location {
@@ -282,19 +282,19 @@ body {
 }
 
 .sensor-card.light .sensor-icon {
-    background: linear-gradient(135deg, #FFD700, #FFA500);
+    background: #0e4714;
 }
 
 .sensor-card.moisture .sensor-icon {
-    background: linear-gradient(135deg, #2196F3, #1976D2);
+    background: #0e4714;
 }
 
 .sensor-card.ph .sensor-icon {
-    background: linear-gradient(135deg, #9C27B0, #7B1FA2);
+    background: #0e4714;
 }
 
 .sensor-card.temperature .sensor-icon {
-    background: linear-gradient(135deg, #FF5722, #E64A19);
+    background: #0e4714;
 }
 
 .sensor-info h3 {
