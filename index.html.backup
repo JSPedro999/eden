@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eden - Smart Plant Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-seedling"></i>
+                    <h1>Eden</h1>
+                </div>
+                <div class="header-actions">
+                    <div class="status-indicator">
+                        <span class="status-dot online"></span>
+                        <span>Connected</span>
+                    </div>
+                    <button class="settings-btn">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Plant Overview -->
+            <section class="plant-overview">
+                <div class="plant-card">
+                    <div class="plant-image">
+                        <div class="plant-avatar">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="plant-status">
+                            <span class="status-badge healthy">Healthy</span>
+                        </div>
+                    </div>
+                    <div class="plant-info">
+                        <h2>Your Plant Data</h2>
+                        <p class="plant-location">Living Room • Window Side</p>
+                        <div class="plant-stats">
+                            <div class="stat">
+                                <span class="stat-label">Age</span>
+                                <span class="stat-value">8 months</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Last Watered</span>
+                                <span class="stat-value">2 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Real-time Sensors -->
+            <section class="sensors-grid">
+                <h2 class="section-title">Real-time Sensor Data</h2>
+                <div class="sensor-cards">
+                    <!-- Light Level -->
+                    <div class="sensor-card light">
+                        <div class="sensor-header">
+                            <div class="sensor-icon">
+                                <i class="fas fa-sun"></i>
+                            </div>
+                            <div class="sensor-info">
+                                <h3>Light Level</h3>
+                                <p class="sensor-description">Current light intensity</p>
+                            </div>
+                        </div>
+                        <div class="sensor-value">
+                            <span class="value" id="light-value">0</span>
+                            <span class="unit">lux</span>
+                        </div>
+                        <div class="sensor-gauge">
+                            <div class="gauge-container">
+                                <div class="gauge-fill" id="light-gauge"></div>
+                            </div>
+                            <div class="gauge-labels">
+                                <span>Low</span>
+                                <span>Optimal</span>
+                                <span>High</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Soil Moisture -->
+                    <div class="sensor-card moisture">
+                        <div class="sensor-header">
+                            <div class="sensor-icon">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                            <div class="sensor-info">
+                                <h3>Soil Moisture</h3>
+                                <p class="sensor-description">Water content in soil</p>
+                            </div>
+                        </div>
+                        <div class="sensor-value">
+                            <span class="value" id="moisture-value">0</span>
+                            <span class="unit">%</span>
+                        </div>
+                        <div class="sensor-gauge">
+                            <div class="gauge-container">
+                                <div class="gauge-fill" id="moisture-gauge"></div>
+                            </div>
+                            <div class="gauge-labels">
+                                <span>Dry</span>
+                                <span>Good</span>
+                                <span>Wet</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- pH Level -->
+                    <div class="sensor-card ph">
+                        <div class="sensor-header">
+                            <div class="sensor-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <div class="sensor-info">
+                                <h3>pH Level</h3>
+                                <p class="sensor-description">Soil acidity/alkalinity</p>
+                            </div>
+                        </div>
+                        <div class="sensor-value">
+                            <span class="value" id="ph-value">0.0</span>
+                            <span class="unit">pH</span>
+                        </div>
+                        <div class="sensor-gauge">
+                            <div class="gauge-container">
+                                <div class="gauge-fill" id="ph-gauge"></div>
+                            </div>
+                            <div class="gauge-labels">
+                                <span>Acidic</span>
+                                <span>Neutral</span>
+                                <span>Alkaline</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Soil Temperature -->
+                    <div class="sensor-card temperature">
+                        <div class="sensor-header">
+                            <div class="sensor-icon">
+                                <i class="fas fa-thermometer-half"></i>
+                            </div>
+                            <div class="sensor-info">
+                                <h3>Soil Temperature</h3>
+                                <p class="sensor-description">Root zone temperature</p>
+                            </div>
+                        </div>
+                        <div class="sensor-value">
+                            <span class="value" id="temp-value">0</span>
+                            <span class="unit">°C</span>
+                        </div>
+                        <div class="sensor-gauge">
+                            <div class="gauge-container">
+                                <div class="gauge-fill" id="temp-gauge"></div>
+                            </div>
+                            <div class="gauge-labels">
+                                <span>Cold</span>
+                                <span>Warm</span>
+                                <span>Hot</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Recommendations -->
+            <section class="recommendations">
+                <h2 class="section-title">Plant Care Recommendations</h2>
+                <div class="recommendations-grid">
+                    <div class="recommendation-card">
+                        <div class="recommendation-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <div class="recommendation-content">
+                            <h3>Watering</h3>
+                            <p id="watering-recommendation">Checking soil moisture...</p>
+                        </div>
+                    </div>
+                    <div class="recommendation-card">
+                        <div class="recommendation-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="recommendation-content">
+                            <h3>Light</h3>
+                            <p id="light-recommendation">Analyzing light conditions...</p>
+                        </div>
+                    </div>
+                    <div class="recommendation-card">
+                        <div class="recommendation-icon">
+                            <i class="fas fa-thermometer-half"></i>
+                        </div>
+                        <div class="recommendation-content">
+                            <h3>Temperature</h3>
+                            <p id="temp-recommendation">Monitoring temperature...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
