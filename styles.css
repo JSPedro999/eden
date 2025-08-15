@@ -21,19 +21,17 @@ body {
 
 /* Header Styles */
 .header {
-    background: #e9eae0;
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(233, 234, 224, 0.2);
-    padding: 0.3rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    left: 0;
-    right: 0;
+    background: #0e4714; /* Dark forest green background */
 }
+
+/* Style the EDEN logo text */
+.logo h1 {
+    /* Set text color to light mist */
+    color: #E9EAE0 !important; /* Use !important to override the gradient/text-clip if needed */
+    background: none !important;
+    -webkit-text-fill-color: inherit !important;
+}
+
 
 .header-content {
     display: flex;
