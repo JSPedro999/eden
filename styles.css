@@ -21,12 +21,12 @@ body {
 
 /* Header Styles */
 .header {
-    background: #e9eae0; /* Dark forest green background */
+    background: #e9eae0; /* Light background */
 }
 
 /* Style the EDEN logo text */
 .logo h1 {
-    /* Set text color to light mist */
+    /* Set text color to dark green */
     color: #0e4714 !important; /* Use !important to override the gradient/text-clip if needed */
     background: none !important;
     -webkit-text-fill-color: inherit !important;

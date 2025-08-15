@@ -196,7 +196,7 @@ class PlantMonitor {
         console.log('🌱 Plant Health Status:', healthStatus);
     }
     
-    // Calculate overall plant health (only considering light and moisture from database)
+    // Calculate overall plant health
     calculatePlantHealth() {
         let criticalIssues = 0;
         let warningIssues = 0;
@@ -571,6 +571,10 @@ class PlantMonitor {
     
     getTemperatureParameterInfo() {
         return `
+            <div class="mock-data-notice">
+                <h4>Mock Data Active</h4>
+                <p>Temperature readings are currently using mock data at optimal levels (22°C).</p>
+            </div>
             <p>Soil temperature affects root growth, nutrient uptake, and overall plant health:</p>
             <ul>
                 <li><strong>Below 10°C:</strong> Too cold - Root growth slows, risk of cold damage</li>
@@ -580,6 +584,7 @@ class PlantMonitor {
                 <li><strong>Above 30°C:</strong> Too hot - Risk of root damage and increased water stress</li>
             </ul>
             <p>Soil temperature is usually more stable than air temperature but follows similar patterns. Root health depends heavily on consistent and appropriate temperatures.</p>
+            <p><em>Note: When real temperature sensors are connected, this will show actual readings and recommendations.</em></p>
         `;
     }
     
